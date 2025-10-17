@@ -1,0 +1,27 @@
+# Dependencies for ANY folder
+**/node_modules
+
+# Build output for ANY folder
+**/dist
+**/build
+
+# Vite cache
+.vite/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (important for backend keys)
+.env
+.env.local
+.env.*.local
+
+# IDE and editor directories
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
