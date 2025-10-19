@@ -18,10 +18,10 @@ export default function JsonTools() {
       const jsonString = JSON.stringify(parsed, null, 2);
       setOutput(jsonString);
       setMessage("✅ JSON formatted successfully!");
-      setMessageType("success");
+      setMessageType("✅ Success");
     } catch (error) {
-      setMessage("Error in Input String");
-      setMessageType("error");
+      setMessage("Error in Input String: " + error.message);
+      setMessageType("❌ Error");
     }
   };
 
@@ -29,10 +29,10 @@ export default function JsonTools() {
     try {
       const parsed = JSON.parse(input);
       setMessage("✅ JSON format is correct!");
-      setMessageType("success");
+      setMessageType("✅ Success");
     } catch (error) {
-      setMessage("Error in Input String");
-      setMessageType("error");
+      setMessage("Error in Input String: " + error.message);
+      setMessageType("❌ Error");
     }
   };
 
@@ -42,10 +42,10 @@ export default function JsonTools() {
       const jsonString = JSON.stringify(parsed);
       setOutput(jsonString);
       setMessage("✅ JSON minified successfully!");
-      setMessageType("success");
+      setMessageType("✅ Success");
     } catch (error) {
-      setMessage("Error in Input String");
-      setMessageType("error");
+      setMessage("Error in Input String: " + error.message);
+      setMessageType("❌ Error");
     }
   };
 
@@ -96,6 +96,24 @@ export default function JsonTools() {
           readOnly
           className="w-full h-64 rounded-lg border-2 border-blue-400 text-sm font-mono p-4"
           value={output}
+        ></textarea>
+      </div>
+      <div className="flex justify-center gap-4">
+        <textarea
+          name="input"
+          id=""
+          placeholder="Message"
+          readOnly
+          className="h-22 rounded-lg border-2 border-blue-400 text-sm font-mono p-4 my-3 flex-1"
+          value={message}
+        ></textarea>
+        <textarea
+          name="input"
+          id=""
+          placeholder="Message Type"
+          readOnly
+          className="h-22 rounded-lg border-2 border-blue-400 text-sm font-mono p-4 my-3"
+          value={messageType}
         ></textarea>
       </div>
     </div>
