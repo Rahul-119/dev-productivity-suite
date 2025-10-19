@@ -100,7 +100,7 @@ export default function JsonTools() {
       </div>
       <div className="flex justify-center gap-4">
         <textarea
-          name="input"
+          name="message"
           id=""
           placeholder="Message"
           readOnly
@@ -108,7 +108,7 @@ export default function JsonTools() {
           value={message}
         ></textarea>
         <textarea
-          name="input"
+          name="message type"
           id=""
           placeholder="Message Type"
           readOnly
