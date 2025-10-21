@@ -50,7 +50,7 @@ export default function JsonTools() {
   };
 
   return (
-    <div className="p-8">
+    <div className="p-4">
       <div>
         <textarea
           name="input"
@@ -99,6 +99,7 @@ export default function JsonTools() {
         ></textarea>
       </div>
       <div className="flex justify-center gap-4">
+        
         <textarea
           name="message"
           id=""
