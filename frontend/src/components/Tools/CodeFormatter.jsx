@@ -18,9 +18,6 @@ export default function CodeFormatter() {
 	};
 
 	const handleFormat = async () => {
-		console.log("Format clicked!");
-		console.log("Input:", input);
-		console.log("Language:", language);
 
 		const parserMap = {
 			javascript: "babel",
@@ -36,24 +33,15 @@ export default function CodeFormatter() {
 			return;
 		}
 
-		if (!input.trim()) {
-			setError("Input is empty");
-			return;
-		}
-
 		try {
-			console.log("Attempting to format with parser:", parser);
-
 			const formatted = await prettier.format(input, {
 				parser: parser,
 				plugins: [parserBabel, parserHtml, parserPostCss, parserEstree],
 			});
 
-			console.log("SUCCESS! Formatted:", formatted);
 			setOutput(formatted);
 			setError("");
 		} catch (error) {
-			console.error("FULL ERROR OBJECT:", error);
 			setError("Formatting Error: " + error.message);
 			setOutput("");
 		}
