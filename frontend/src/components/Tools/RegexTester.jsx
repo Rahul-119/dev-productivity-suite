@@ -32,7 +32,7 @@ export default function RegexTester() {
     }
   };
   return (
-    <div>
+    <div className="p-4">
       <div className="flex items-center">
         <label htmlFor="pattern" className="font-mono font-bold text-xl">
           Expression
