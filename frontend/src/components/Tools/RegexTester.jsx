@@ -1,5 +1,8 @@
+import MainWorkspace from "../Layout/MainWorkspace";
+
 import { useState } from "react";
 export default function RegexTester() {
+
   const [pattern, setPattern] = useState("");
   const [input, setInput] = useState("");
   const [matches, setMatches] = useState([]);
@@ -31,8 +34,10 @@ export default function RegexTester() {
       setMatches([]);
     }
   };
+
   return (
-    <div className="p-4">
+    <MainWorkspace title="Regex Tester">
+      <div className="p-4">
       <div className="flex items-center">
         <label htmlFor="pattern" className="font-mono font-bold text-xl">
           Expression
@@ -125,5 +130,7 @@ export default function RegexTester() {
         ></textarea>
       </div>
     </div>
+    </MainWorkspace>
+    
   );
 }

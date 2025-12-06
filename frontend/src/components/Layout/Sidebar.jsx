@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
+
 export default function Sidebar() {
+	
 	const tools = [
 		{ name: "Api Tester", path: "/api-tester" },
 		{ name: "Code Formatter", path: "/code-formatter" },
@@ -7,9 +9,10 @@ export default function Sidebar() {
 		{ name: "Regex Tester", path: "/regex-tester" },
 		{ name: "Hash Generator", path: "/hash-generator" },
 	];
+
 	return (
-		<nav className="w-64 h-screen bg-gray-100 p-4">
-			<h2 className="pt-7 p-4 text-lg font-semibold text-gray-800">
+		<nav className="w-64 h-full bg-white/80 border-r-2 border-blue-100 shadow-lg backdrop-blur-md p-4 ">
+			<h2 className="pt-7 p-4 text-lg font-semibold text-gray-800  ">
 				Tools at your Disposal
 			</h2>
 			<ul>
@@ -20,7 +23,7 @@ export default function Sidebar() {
 							className={({ isActive }) =>
 								`p-4 rounded-lg block transition-colors ${
 									isActive
-										? "bg-blue-600 text-white"
+										? "border-l-4 border-indigo-500 pl-6"
 										: "hover:bg-gray-200 text-gray-700"
 								}`
 							}
