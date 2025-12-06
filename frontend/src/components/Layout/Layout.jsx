@@ -6,7 +6,7 @@ export default function Layout({children}){
             <Header></Header>
             <div className="flex flex-1 min-h-screen">
                 <Sidebar></Sidebar>
-                <main className="bg-gray-50 flex-1 p-8 overflow-auto">
+                <main className="bg-gray-50 flex-1 p-1 overflow-auto">
                     {children}
                 </main>
             </div>

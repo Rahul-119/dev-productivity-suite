@@ -11,7 +11,7 @@ export default function Sidebar() {
 	];
 
 	return (
-		<nav className="w-64 h-full bg-white/80 border-r-2 border-blue-100 shadow-lg backdrop-blur-md p-4 ">
+		<nav className="w-64 min-h-screen bg-white/80 border-r-2 border-blue-100 shadow-lg backdrop-blur-md p-4 ">
 			<h2 className="pt-7 p-4 text-lg font-semibold text-gray-800  ">
 				Tools at your Disposal
 			</h2>
