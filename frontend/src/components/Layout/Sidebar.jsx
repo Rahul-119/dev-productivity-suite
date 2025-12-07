@@ -21,7 +21,7 @@ export default function Sidebar() {
 						<NavLink
 							to={tool.path}
 							className={({ isActive }) =>
-								`p-4 rounded-lg block transition-colors ${
+								`p-4 my-3 rounded-lg block transition-colors ${
 									isActive
 										? "border-l-4 border-indigo-500 pl-6"
 										: "hover:bg-gray-200 text-gray-700"

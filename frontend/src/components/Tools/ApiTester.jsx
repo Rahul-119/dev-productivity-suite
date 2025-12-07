@@ -87,7 +87,7 @@ export default function ApiTester() {
 						{/* Method and URL Input */}
 						<div className="flex flex-col md:flex-row gap-3">
 							<select
-								className={`px-4 py-3 rounded-xl bg-gradient-to-r ${methodColors[method]} text-white font-bold text-sm md:text-base shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer outline-none md:w-32`}
+								className={`px-4 py-3 rounded-xl bg-gradient-to-r ${methodColors[method]} text-black font-bold text-sm md:text-base shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer outline-none md:w-32`}
 								value={method}
 								onChange={(e) => setMethod(e.target.value)}
 							>
