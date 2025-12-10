@@ -169,7 +169,7 @@ export default function HashGenerator() {
 							</button>
 						</div>
 						<div className="relative">
-							<CopyButton text={base64Result} className=" absolute right-1 top-1 px-0.1 py-0.1 rounded-lg bg-slate-700 hover:bg-slate-600 text-white font-medium text-sm transition-all duration-200" />
+							<CopyButton text={base64Result} className="absolute right-1 top-1 px-0.1 py-0.1 rounded-lg bg-slate-700 hover:bg-slate-600 text-white font-medium text-sm transition-all duration-200" />
 							<textarea
 								readOnly
 								placeholder="Result will appear here..."
